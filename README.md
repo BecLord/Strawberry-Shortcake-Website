@@ -2,7 +2,9 @@
 
 A static, multi-page fan website based on the 2003 Strawberry Shortcake series.
 
-This project was created for my Web Development Fundamentals module. The aim was to apply the HTML5 and CSS3 skill that were learnt in the module to build my first website from scratch. The project help me to understand HTML structure, CSS styling, page layouts, navigation, forms, and basic JavaScript while building my first website from scratch.
+This project was created for my Web Development Fundamentals module during semester 1 of first year. 
+The aim was to apply the HTML5 and CSS3 skill that were learnt in the module to build my first website from scratch. 
+The project help me to understand HTML structure, CSS styling, page layouts, navigation, forms, and basic JavaScript while building my first website from scratch.
 
 
 ## Features
