@@ -24,9 +24,9 @@ The project help me to understand HTML structure, CSS styling, page layouts, nav
 | `Home.html` | Main fan-site page with character and pet profiles, franchise history, and videos |
 | `Resources.html` | Merchandise and external Strawberry Shortcake reference links |
 | `Competition.html` | Monthly competition entry form |
-| `ContactUs.html` | Contact information and an embedded social timeline |
+| `ContactUs.html` | Contact information and embedded social timeline |
 | `FAQ.html` | Answers to common questions about the series |
-| `Project-Java.html` | JavaScript demonstrations and an interactive pet game |
+| `Project-Java.html` | JavaScript demonstrations an interactive pet game |
 
 ## Technologies Used
 
