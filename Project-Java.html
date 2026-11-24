@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- Web Development Fundamentals Project -->
+<!-- Author: Rebecca Lordan -->
+<html lang = "en-IE">
+<head>
+	<meta charset = "utf-8">
+	<meta name = "keywords" content = "CSS, HTML, JavaScript">
+	<title> Strawberry Shortcake </title>
+	<link rel = "stylesheet" href = "Styles-S/CSS-Strawberry.css">
+	<link rel="icon" type="image/x-icon" href="Images-S/Icon.png">
+</head>
+<body>
+	<header>
+		<img src="Images-S/header1.png" alt="Logo">
+	</header>
+	<nav>
+		<button id=" ">Navigation</button>
+		<div class="subMenu " id="expandingMenu" >
+			<a class="subMenu" href="Project-Java.html">Game</a>
+			<a class="subMenu" href="Home.html">Home</a></div>
+	</nav>
+		
+	<main>
+		<script> 
+			var name = prompt("What is your name?");
+			alert("Hello " + name);
+		</script>
+		<script> 
+			document.write("<h1>Hello " + name + " Let's Play!</h1>"); 
+		</script>
+		<div class="wrap-element">
+		<img src="Images-S/d.png" class="wrapped-iframe" alt="charcters" width="800" height="650">
+		</div>
+	
+		<button onclick="document.getElementById('date').innerHTML = Date()">Date and Time</button>
+		<p>The current Data and Time is: <span id="date"></span></p>
+		<form action="" onsubmit="return false;">
+			<label for="likeMTU">Do you like Strawberry Shortcake?</label>
+			<input type="range" min"0" maz"100" id="likeSB"><span id="opinion"></span>
+		</form>
+		<script>
+		document.getElementById("likeSB").onchange = slide;
+		function slide() {
+			var x = document.getElementById("likeSB").value;
+			if (x>80) {
+				document.getElementById("likeSB").innerHTML="Love It";
+				}
+			else if (x>60) {
+				document.getElementById("likeSB").innerHTML="Like It";
+				}
+			else if (x>40) {
+				document.getElementById("likeSB").innerHTML="No opinion";
+				}
+			else if (x>20) {
+				document.getElementById("likeSB").innerHTML="Not for Me";
+				}
+		}
+		</script>
+		<h3>Who is your Favourite Character from Strawberry Shortcake?</h3>
+		<img id="myImage" src="Images-S/character1.png" width="400" height="450">
+		<nav>
+		<button onclick="document.getElementById('myImage').src='Images-S/character1.png'">Strawberry</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character2.png'">Angel Cakes</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character3.png'">Apple Dumplin</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character4.png'">Blueberry Muffin</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character5.png'">Coco Calypso</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character6.png'">Ginger Snap</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character7.png'">Huckelberry Pie</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character8.png'">Orange Blosson</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character9.png'">Peppermint Fizz</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character10.png'">Rainbow Sherbert</button>
+		<button onclick="document.getElementById('myImage').src='Images-S/character11.png'">Seaberry Light</button>
+		</nav>
+		
+		<h3>Play The Game!</h3>
+		<script>
+		function displayUserHero() {
+			var choice = document.getElementById("favPet").value;
+			document.getElementById("userChoice").innerHTML = choice;
+		}
+		function playGame() {
+			var d = Math.floor(Math.random()*6)+1;
+			var x = document.getElementById("bio").innerHTML;
+			if (d==1) {
+				document.getElementById("bioPic").src="Images-S/pet1.png";
+				document.getElementById("petName").innerHTML= "Custard";
+				x+= document.getElementById("owner").innerHTML = "Strawberry Shortcake's cat";
+			}
+			else if (d==2) {
+				document.getElementById("bioPic").src="Images-S/character2.png";
+				x+= document.getElementById("petName").innerHTML= "Pupcake";
+				x+= document.getElementById("owner").innerHTML = "Strawberry Shortcake's dog";
+			}
+			else if (d==3) {
+				document.getElementById("bioPic").src="Images-S/character3.png";
+				x+= document.getElementById("petName").innerHTML= "Vanulla";
+				x+= document.getElementById("owner").innerHTML = "Angel Cake's lamb";
+			}
+			else if (d==4) {
+			document.getElementById("bioPic").src="Images-S/character4.png";
+			x+= document.getElementById("petName").innerHTML= "Chocolate";
+			x+= document.getElementById("owner").innerHTML = "Ginger Snap's Chipmunk";
+			}
+			else if (d==5) {
+			document.getElementById("bioPic").src="Images-S/character5.png";
+			x+= document.getElementById("petName").innerHTML= "Shoefly";
+			x+= document.getElementById("owner").innerHTML = "Huckelberry Pie's Frog";
+			}
+			else if (d==6) {
+			document.getElementById("bioPic").src="Images-S/character6.png";
+			x+= document.getElementById("petName").innerHTML= "Marmalade";
+			x+= document.getElementById("owner").innerHTML = "Orange Blossom's Butterfly";
+			}
+			else if (d==7) {
+			document.getElementById("bioPic").src="Images-S/character7.png";
+			x+= document.getElementById("petName").innerHTML= "Apple Ducklin'";
+			x+= document.getElementById("owner").innerHTML = "Apple Dumplin' Duckling";
+			}
+		}
+		</script>
+		<hr>
+		<script> 
+			document.write("<h4> " + name + " feel free to Contact Us:</h4>"); 
+		</script>
+		<p><strong>Address</strong> - Bishopstown, Cork, Ireland. T12 P928
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.7183422757244!2d-8.538956899999999!3d51.8843537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484491e0f9d78679%3A0x7b6c37cb2ac0c471!2sMTU%20Bishopstown%20Campus%20Students%20Parking!5e0!3m2!1sen!2sie!4v1670240622485!5m2!1sen!2sie" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<br><strong>Phone Number</strong> - <a href="tel:+353214326100"> +353 (0)214326100</a>
+			<br><strong>Email</strong> -<a href ="mailto:http//infoCork@mtu.ie">MyCIT Email</a>
+		</p>
+		<p><a href = "#top">Back to Top</a></p> 
+		
+	
+		<div class="cols">
+			<img src="Images-S/sbcute.png" alt= "sbcute" width=250 height=300> 
+		</div>
+
+	</main>
+
+	<footer>
+		<img src="Images-S/logo.png" alt="Logo" height="100" width="200">
+		<p><small>&copy; 2003 Strawberry Shortcake </small></p>
+		<a href="https://strawberryshortcake.fandom.com/wiki/Category:Characters">StrawberryWiki</a>
+		<a href="https://en.wikipedia.org/wiki/Strawberry_Shortcake">Wikipida</a>
+		<a href="https://www.pinterest.ie/search/pins/?q=Strawberry%20shortcake%202003&rs=rs&eq=&etslf=1531">Pinterest</a>
+		<a href="https://www.strawberryshortcake.com/">New Offical Website</a>
+		<a href="https://www.strawberryshortcake.com/">Review</a>
+		<a href="https://en.wikipedia.org/wiki/Strawberry_Shortcake_(2003_TV_series)">2003Wiki</a>
+	</Footer>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- Web Development Fundamentals Project -->
+<!-- Author: Rebecca Lordan -->
+<html lang = "en-IE">
+<head>
+	<meta charset = "utf-8">
+	<meta name = "keywords" content = "CSS, HTML">
+	<title> Strawberry Shortcake </title>
+	<link href = "Styles-S/CSS-Strawberry.css" rel = "stylesheet">
+	<link rel="icon" type="image/x-icon" href="Images-S/Icon.png">
+</head>
+<body>
+	<header>
+		<img src="Images-S/header1.png" alt="Logo">
+	</header>
+	
+	<nav>
+		<a href="Home.html">Home</a>
+		<a href="Resources.html">Resources</a>
+		<a href="Competition.html">Competition</a>
+		<a href ="ContactUs.html">Contact Us</a>
+		<a href ="FAQ.html">FAQ</a>	
+	</nav>
+	
+	<main>
+		<h1> Competition Time! </h1>
+		<div class="wrap-element">
+		<img src="Images-S/bb.png" class="wrapped-iframe" alt="Blueberry House" width="800" height="650">
+		</div>
+		<h2> Details </h2>
+		<div class="col">
+			<img src="Images-S/duck.png" alt= "duck" width=300 height=250> 
+		</div>
+		<p><strong> We have a monthly competition for all our Berry Best Fans. <br> Below is a form where to enter you submit a photo or drawn picture</strong></p>
+		
+		<form method="get" action = "https://webdevcit.com/displayvalues.php" target="_blank">
+			<h3> Please Fill out below to Enter</h3>
+			<fieldset>
+				<legend>Contact Details</legend>
+				<label>First Name:<br>
+				<input type="text" name="First_Name" placeholder="Enter your First Name" required="required"> </label><br>
+				<label>Last Name:<br>
+				<input type="text" name="Last_Name" placeholder="Enter your Last Name" required="required"> </label><br>
+				<label>Email:<br>
+				<input type="email" name="Email" placeholder="name@domain.com" required="required"> </label><br>
+				<label>Contact Number:<br>
+				<input type="tel" name="Telephone" placeholder="###-#######" required="required"></label>
+		
+				<p>Preferred method of contact:
+					<select name="Contact">
+						<option value="Email">Email</option>
+						<option value="Zoom">Zoom</option>
+						<option value="WhatsApp">WhatsApp</option>
+						<option value="Text Message">Text Message</option>
+					</select>
+				</p>
+				<p>Date of Birth:  
+					<select id="day" name="Day">
+						<option>Day</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+						<option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+						<option value="31">31</option>
+					</select>	
+					<select id="month" name="Month">
+						<option>Month</option>
+						<option value="01">January</option>
+						<option value="02">February</option>
+						<option value="03">March</option>
+						<option value="04">April</option>
+						<option value="05">May</option>
+						<option value="06">June</option>
+						<option value="07">July</option>
+						<option value="08">August</option>
+						<option value="09">September</option>
+						<option value="10">October</option>
+						<option value="11">November</option>
+						<option value="12">December</option>
+					</select>	
+					<select id="year" name="Year">
+						<option>Year</option>
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						<option value="2002">2002</option>
+						<option value="2003">2003</option>
+						<option value="2004">2004</option>
+						<option value="2005">2005</option>
+						<option value="2006">2006</option>
+						<option value="2007">2007</option>
+						<option value="2008">2008</option>
+						<option value="2009">2009</option>
+						<option value="2010">2010</option>
+						<option value="2011">2011</option>
+						<option value="2012">2012</option>
+						<option value="2013">2013</option>
+						<option value="2014">2014</option>
+						<option value="2015">2015</option>
+						<option value="2016">2016</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+					</select>
+				</p>
+				<label>Are you intreseted in receiving updates from our fan site?</label><br>
+					<input id="no" type="radio" checked="checked" name="updates" value="no"><label for="no">No, Thank You</label>
+					<input id="yes" type="radio" name="updates" value="yes"><label for="yes">Yes, Please</label>
+			</fieldset>
+			<fieldset>
+				<legend>Berry Best Friend</legend>
+				<p>Share your favourite Strawberry Shortcake Moments<br>
+				<textarea name="fav_moment" cols="45" rows="5" placeholder="Tell us here"></textarea>
+				<br>Fan Comments<br>
+				<textarea name="fan_comments" cols="45" rows="5" placeholder="Tell us here"></textarea>
+				</p>
+				<p>Who is your favourite Strawberry Shortcake Character?<br>
+					<input type="checkbox" name="fav_character" value="strawberry_shortcake"><label>Strawberry Shortcake</label><br>
+					<input type="checkbox" name="fav_character" value="apple_dumplin'"><label>Apple Dumplin'</label><br>
+					<input type="checkbox" name="fav-character" value="ginger_snap"><label>Ginger Snap</label><br>
+					<input type="checkbox" name="fav_character" value="orange_blossom"><label>Orange Blossom</label><br>
+					<input type="checkbox" name="fav_character" value="angel_cake"><label>Angel Cake</label><br>
+					<input type="checkbox" name="fav_character" value="huckleberry_pie"><label>Huckleberry Pie</label><br>
+					<input type="checkbox" name="fav_character" value="blueberry_muffin"><label>Blueberry Muffin</label><br>
+					<input type="checkbox" name="fav_character" value="seaberry_delight"><label>Seaberry Delight</label><br>
+					<input type="checkbox" name="fav_character" value="rainbow_sherbet"><label>Rainbow Sherbert</label><br>
+					<input type="checkbox" name="fav_character" value="peppermint_fizz"><label>Peppermint Fizz</label><br>
+					<input type="checkbox" name="fav_character" value="coco_calypso"><label>Coco Calypso</label><br>
+				</p>
+				<p>Who is your favourite Strawberry Shortcake Pet?<br>
+					<input type="checkbox" name="fav_pet" value="custard"><label>Custard</label><br>
+					<input type="checkbox" name="fav_pet" value="pupcake"><label>Pupcake</label><br>
+					<input type="checkbox" name="fav_pet" value="chocolate_chicmunk"><label>Chocolate Chickmunk</label><br>
+					<input type="checkbox" name="fav_pet" value="vanilla_icing"><label>Vanilla Icing</label><br>
+					<input type="checkbox" name="fav_pet" value="shoofly"><label>Shoofly</label><br>
+					<input type="checkbox" name="fav_pet" value="marmalade"><label>Marmalade</label><br>
+					<input type="checkbox" name="fav_pet" value="apple_ducklin"><label>Apple Ducklin</label><br>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>Thank You!</legend>
+				<p>Upload your image/drawing here:
+				<input type="file" name="uploaded_file" required="required"></p>
+			
+				<p>
+					<input type="submit">
+					<input type="reset">
+				</p>
+			</fieldset>
+		</form>
+		
+		<div class="cols">
+			<img src="Images-S/cake.png" alt= "cake" width=350 height=300> 
+		</div>
+		
+		<p><a href = "#top">Back to Top</a></p>
+	</main>
+	
+	<footer>
+		<img src="Images-S/logo.png" alt="Logo" height="100" width="200">
+		<p><small>&copy; 2003 Strawberry Shortcake </small></p>
+		<a href="https://strawberryshortcake.fandom.com/wiki/Category:Characters">StrawberryWiki</a>
+		<a href="https://en.wikipedia.org/wiki/Strawberry_Shortcake">Wikipida</a>
+		<a href="https://www.pinterest.ie/search/pins/?q=Strawberry%20shortcake%202003&rs=rs&eq=&etslf=1531">Pinterest</a>
+		<a href="https://www.strawberryshortcake.com/">New Offical Website</a>
+		<a href="https://www.strawberryshortcake.com/">Review</a>
+		<a href="https://en.wikipedia.org/wiki/Strawberry_Shortcake_(2003_TV_series)">2003Wiki</a>
+	</Footer>
+</body>
+</html>

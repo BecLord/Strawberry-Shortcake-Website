@@ -1,0 +1,157 @@
+*{
+	font-family: "Times New Roman", Times, sans-serif;
+}
+html{
+	background: #E29BB9
+}
+head{
+	
+}
+body{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	min-height:400px;
+}
+header{
+	background-color: white;
+	display: block;
+	text-align: center;
+}
+nav{
+	text-align: center;
+	background-color: #DB0036;
+	color: #ffccff;
+	border-top: 4px solid #94D66A;
+	border-bottom: 4px solid #94D66A;
+}
+nav a{
+	text-decoration: none;
+	width:15%;
+	display: inline-block;
+	background-color: #DB0036;
+	color: #94D66A;
+	font-size: 1.2em;
+	padding: .3em;
+	border: 2px #DB0036;
+}
+nav a:hover{
+	text-decoration: underline;
+	background-color:#94D66A;
+	color: #DB0036;
+	border: 2px #94D66A;
+}
+#right{
+	width: 80%;
+	float: left;
+}
+#image_cols{
+	width:100%;
+	overflow: hidden;
+}
+.cols {
+	width: 32%;
+	float: right;
+	text-align: center;
+	padding-right: 10%;
+}
+.col {
+	width: 35%;
+	float: left;
+	text-align: right;
+	padding-right: 13%;
+}
+.wrap-element{
+	position: relative;
+	overflow: hidden;
+	padding-top: 56.25%
+}
+.wrapped-iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.specoal{
+	position: relative;
+	overflow: hidden;
+	background-color: #94D66A;
+}
+td.description{
+	min-width: 450px;
+	max-width: 650px;
+	text-align: left;
+	padding: 5px;
+	margin: 0px;
+}
+main{
+	width: 90%;
+	margin: auto;
+}
+main:after{
+	display: block;
+	clear: both;
+	content: "";
+}
+h1{
+	font-size: 200%;
+	font-style: italic;
+	color: #D90337; 
+	text-align: center;
+}
+h2{
+	font-size: 30px;
+	font-style: italic;
+	color: #E699B9;
+	text-align: center;
+}
+h3{
+	font-size: 24px;
+	font-style: italic;
+	color: #E699B9;
+	padding: 10px
+}
+h4{
+	font-size: 18px;
+	font-style: italic;
+	color: #E699B9;
+	padding: 10px
+}
+p{
+	font-size: 16px;
+	padding: 15px;
+	color: black;
+}
+strong{
+	font-size: 17px;
+	color: #94D66A;
+}
+hr{
+	border: 10px solid #94D66A;
+}
+fieldset {
+	border: 5px solid #E29BB9;
+	width: 90%;
+	margin: auto;
+	background: #94D66A;
+	padding: 5px;
+}
+fieldset legend{
+	text-align: left;
+	background: #E29BB9;
+	padding: 6px;
+	font-weight: bold;
+}
+footer{
+	text-align: center;
+	background-color: #DB0036;
+	border-top: 4px solid #94D66A;
+	border-bottom: 4px solid #DB0036;
+}
+footer p {
+	font-size: 1em;
+	font-style: italic;
+	text-align: center;
+	color: #94D66A;
+}
